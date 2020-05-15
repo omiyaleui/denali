@@ -1,0 +1,167 @@
+/* div{
+    border: 1px solid #000;
+} */
+
+body,
+  h1,
+  ul {
+    margin: 10;
+    padding: 10;
+}
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Open Sans;
+}
+  
+
+/* Header section  start*/
+
+  
+
+  
+  header {
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 100px;
+    /* margin: 2em; */
+    background:white;
+    margin-bottom: 35px;
+    box-shadow: 0 1px 3px rgba(0,0,0 ,.2);
+
+  }
+
+  .header-inner {
+    background:white;
+    align-items: center;
+    display: flex;
+
+  }
+  
+  /*
+    as children of header,
+    logo and nav
+    become our flex items
+  */
+  
+  #logo {
+    
+
+    flex: 1;
+  }
+  
+  /*
+    make the nav ul
+    our second flex container
+  */
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /*
+    as children of ul,
+    all list items
+    become flex items
+  */
+  
+  nav li {
+    list-style: none;
+    margin-left: 50px;
+  }
+
+
+/* Headt section end */
+.my-grid {
+display: grid;
+grid-template-columns:1fr 3fr;
+grid-template-rows: 100vh;
+grid-column-gap: 10px;
+width: 90%;
+margin:0 auto;
+}
+
+.content{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 300px;
+grid-row-gap: 20px;
+
+}
+
+.item {
+padding: 20px;
+background-color: white;
+border-radius: 3px;
+box-shadow: 0 1px 3px rgba(0,0,0 ,.2);
+}
+
+.example-item2 ,.example-item3,.example-item4 ,.example-item5  {
+    display: inline-flex;
+}
+
+
+
+/* -------Side bar ---------*/
+
+.sidebar.item {
+  margin-right: 30px;
+
+}
+
+.sidebar .profile-img{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: url(https://cdn.pixabay.com/photo/2018/01/13/19/39/fashion-3080644_960_720.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.sidebar .sidebar-content{
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 5px;
+    text-align: left;
+}
+.sidebar p{
+    text-align: justify;
+}
+.sidebar .social-media {
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.sidebar .social-media li{
+    display: inline;
+    list-style: none;
+    margin: 5px;
+}
+.sidebar .social-media img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* ------- Right Content ---------*/
+.content .blg-img{
+    display: block;
+    width: 240px;
+    height: 240px;
+    margin-right: 20px;
+    background: url(https://cdn.pixabay.com/photo/2018/01/13/19/39/fashion-3080644_960_720.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.content .blg-content{
+    width: 70%;
+    height: 240px;
+    padding: 5px;
+}
+.content .blg-content h3{
+    margin: 0;
+}
+.content .blg-content p{
+    text-align: justify;
+}
